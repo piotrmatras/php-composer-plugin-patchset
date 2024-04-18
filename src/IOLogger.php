@@ -3,10 +3,10 @@
 namespace Creativestyle\Composer\Patchset;
 
 use Composer\IO\IOInterface;
-use Composer\IO\BaseIO;
+use Composer\IO\ConsoleIO;
 use Psr\Log\LogLevel;
 
-class IOLogger extends BaseIO
+class IOLogger extends ConsoleIO
 {
     const VERBOSITY_LEVEL_MAP = [
         LogLevel::DEBUG => IOInterface::DEBUG,
